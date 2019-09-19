@@ -7,4 +7,5 @@ WORKDIR /github/workspace
 RUN git clone https://github.com/Solaiman-MultiSafepay/slack-project.git /github/workspace
 COPY entrypoint.sh /entrypoint.sh
 RUN ls -a
+RUN pwd
 ENTRYPOINT ["/entrypoint.sh"]
