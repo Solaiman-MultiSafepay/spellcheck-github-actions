@@ -11,4 +11,4 @@ matrix:
   - pyspelling.filters.markdown:
   - pyspelling.filters.html:
   sources:
-  - './*.md'
+  - '**/*.md'
