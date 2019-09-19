@@ -14,7 +14,7 @@ matrix:
   - '**/*.md'
 - name: Text
   sources:
-  - '**/*.txt'
+  - './*.md'
   dictionary:
     wordlists:
     - wordlist.txt
