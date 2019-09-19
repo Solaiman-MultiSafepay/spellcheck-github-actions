@@ -5,8 +5,6 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install pyspelling
 COPY entrypoint.sh /entrypoint.sh
 RUN git clone https://github.com/Solaiman-MultiSafepay/slack-project.git slack-project
-RUN ls -a
-COPY spellcheck.yaml /spellcheck.yaml
-COPY wordlist.txt /wordlist.txt
+WORKDIR /slack-project
 RUN ls -a
 ENTRYPOINT ["/entrypoint.sh"]
