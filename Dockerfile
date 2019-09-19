@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 RUN pip3 install pyspelling
 WORKDIR /github/workspace
-RUN git clone https://github.com/Solaiman-MultiSafepay/slack-project.git slack-project
+RUN git clone https://github.com/Solaiman-MultiSafepay/slack-project.git /github/workspace
 COPY entrypoint.sh /entrypoint.sh
 RUN ls -a
 ENTRYPOINT ["/entrypoint.sh"]
