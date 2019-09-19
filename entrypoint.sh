@@ -1,9 +1,9 @@
 #!/bin/bash
-if [ ! -f ./spellcheck.yaml ]; then
+if [ ! -f ./slack-project/spellcheck.yaml ]; then
     cp /spellcheck.yaml .
 fi
 
-if [ ! -f ./wordlist.txt ]; then
+if [ ! -f ./slack-project/wordlist.txt ]; then
     cp /wordlist.txt .
 fi
 
