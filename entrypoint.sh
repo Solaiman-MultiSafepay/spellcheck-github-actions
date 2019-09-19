@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ ! -f ./spellcheck.yaml ]; then
-    cp /spellcheck.yaml .
+if [ ! -f ./github/workspace/spellcheck.yaml ]; then
+    cp /github/workspace/spellcheck.yaml .
 fi
 
-if [ ! -f ./wordlist.txt ]; then
-    cp /wordlist.txt .
+if [ ! -f ./github/workspace/wordlist.txt ]; then
+    cp //github/workspace/wordlist.txt .
 fi
 echo $PWD
 pyspelling -c spellcheck.yaml
