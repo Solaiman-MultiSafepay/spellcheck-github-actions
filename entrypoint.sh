@@ -1,6 +1,7 @@
 #!/bin/bash
-if [ ! -f ./github/workspace/spellcheck.yaml ]; then
-    cp /github/workspace/spellcheck.yaml .
+echo "$(ls)"
+if [ ! -f ./spellcheck.yaml ]; then
+    cp /spellcheck.yaml .
 fi
 
 if [ ! -f ./github/workspace/wordlist.txt ]; then
